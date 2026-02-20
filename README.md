@@ -1,3 +1,16 @@
+# 🔐 Cisco IOS Secure Baseline Hardening
+
+![Cisco IOS](https://img.shields.io/badge/Platform-Cisco%20IOS-blue)
+![Security Baseline](https://img.shields.io/badge/Security-Baseline-critical)
+![CIS Benchmark](https://img.shields.io/badge/Compliance-CIS%20Benchmark-success)
+![Defense in Depth](https://img.shields.io/badge/Architecture-Defense--in--Depth-informational)
+![Layer 2 Protection](https://img.shields.io/badge/Layer%202-Hardened-orange)
+![VRF Segmentation](https://img.shields.io/badge/Segmentation-VRF%20Enabled-purple)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
+---
+
+Enterprise-ready modular Cisco IOS security baseline aligned with STIG guidance, CIS benchmarks, and segmentation-first network architecture principles.
 # Cisco-IOS-Secure-Baseline-Hardening
 Overview
 
