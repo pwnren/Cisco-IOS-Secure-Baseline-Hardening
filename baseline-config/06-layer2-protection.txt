@@ -1,0 +1,26 @@
+ Layer 2 Protection Controls
+ ================================
+!
+spanning-tree mode rapid-pvst
+spanning-tree portfast default
+spanning-tree bpduguard default
+spanning-tree loopguard default
+!
+! Root Guard Example (Apply to Access Uplinks)
+!
+! interface GigabitEthernet1/0/48
+!  spanning-tree guard root
+
+!
+! UDLD Aggressive Mode (Fiber Links)
+!
+udld aggressive
+
+!
+! EtherChannel Best Practice (LACP)
+!
+! interface range Gi1/0/1-24
+!  channel-group 1 mode active
+!
+! interface Port-channel1
+!  switchport mode trunk
