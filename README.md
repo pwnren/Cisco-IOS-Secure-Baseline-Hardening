@@ -9,11 +9,6 @@
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ---
-
-Enterprise-ready modular Cisco IOS security baseline aligned with STIG guidance, CIS benchmarks, and segmentation-first network architecture principles.
-# Cisco-IOS-Secure-Baseline-Hardening
-Overview
-
 This repository provides a reusable security baseline for Cisco IOS network devices aligned with STIG guidance and enterprise network security best practices.
 
 The baseline reduces management-plane exposure, enforces centralized authentication, and implements Layer 2 protection controls.
