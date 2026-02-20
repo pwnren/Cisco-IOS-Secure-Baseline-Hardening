@@ -12,7 +12,7 @@ interface port-channel1
  spanning-tree guard root
 
 ! Best Practices:
-! - Use LACP over PAgP
-! - Ensure identical speed/duplex on member interfaces
-! - Match trunk VLAN configuration on both sides
-! - Avoid mixing L2 and L3 in same bundle
+- Use LACP over PAgP
+- Ensure identical speed/duplex on member interfaces
+- Match trunk VLAN configuration on both sides
+- Avoid mixing L2 and L3 in same bundle
