@@ -13,36 +13,62 @@ This repository provides a reusable security baseline for Cisco IOS network devi
 
 The baseline reduces management-plane exposure, enforces centralized authentication, and implements Layer 2 protection controls.
 
-## Management Plane Security
-- Disable insecure services (HTTP, CDP, PAD)
-- SSHv2 only (4096-bit RSA)
-- TACACS+ AAA enforcement
-- AES key encryption
-- Exec-timeout configuration
-- Legal login banner
+# Security Domains Covered
 
-## Logging & Auditing
-- Centralized syslog forwarding
+## 🔐 Management Plane Security
+
+- Disable insecure services (HTTP server, PAD, small TCP/UDP services)
+- CDP control and exposure reduction
+- SSHv2 only (4096-bit RSA key generation)
+- Encrypted management transport exclusively
+- TACACS+ centralized AAA (authentication, authorization, accounting)
+- Local fallback authentication
+- AES key encryption for sensitive credentials
+- Exec-timeout and session hardening
+- STIG-aligned legal login banner enforcement
 - Configuration archive logging
-- Timestamp enforcement
-- SNMPv3 only (no v2c)
 
-## Layer 2 Protection
+---
+
+## 📊 Logging & Auditing
+
+- Centralized syslog forwarding
+- Buffered logging for local retention
+- Timestamp enforcement (msec + timezone)
+- SNMPv3 only (AuthPriv, no v1/v2c)
+- Configuration change tracking
+- Audit visibility for security monitoring platforms
+
+---
+
+## 🌐 Layer 2 Protection Controls
+
 - Rapid-PVST enabled
+- PortFast default (access ports)
 - BPDU Guard default
-- Root Guard
-- Loop Guard
-- UDLD aggressive
-- EtherChannel (LACP only)
+- Root Guard (rogue root prevention)
+- Loop Guard (non-designated port protection)
+- UDLD aggressive (fiber protection)
+- EtherChannel hardening (LACP active mode only)
+- Port security (MAC limiting, sticky MAC, violation control)
 
-## Segmentation
-- VRF separation 
-- ACL boundary enforcement
-- No direct IT-to-OT routing without policy
+---
 
-## Design Principles
-- Default deny mindset
-- Encrypted management access only
-- Segmentation aware design
+## 🧱 Segmentation & Boundary Enforcement
+
+- VRF-based separation
+- Layer 3 boundary control strategy
+- ACL enforcement at trust boundaries
+- No direct IT-to-OT routing without explicit policy
+- Segmentation-aware architecture design
+
+---
+
+# Design Principles
+
+- Default-deny security mindset
+- Encrypted management plane only
+- Least-privilege access control
+- Segmentation-first architecture
 - Defense-in-depth layering
-- Compliance alignment
+- Compliance-aligned implementation (CIS)
