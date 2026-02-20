@@ -1,7 +1,7 @@
  EtherChannel Best Practices
 !
 
-! Use LACP (Active Mode Recommended)
+Use LACP (Active Mode Recommended)
 interface range gi1/0/1-2
  channel-group 1 mode active
 
@@ -11,7 +11,7 @@ interface port-channel1
  switchport trunk allowed vlan 10,20,35,40,50
  spanning-tree guard root
 
-! Best Practices:
+ Best Practices:
 - Use LACP over PAgP
 - Ensure identical speed/duplex on member interfaces
 - Match trunk VLAN configuration on both sides
