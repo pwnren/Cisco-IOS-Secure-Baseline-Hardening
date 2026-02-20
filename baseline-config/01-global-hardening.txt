@@ -1,8 +1,5 @@
-!
-! ================================
-! Cisco IOS Global Hardening
-! ================================
-!
+Cisco IOS Global Hardening
+================================
 
 ! Disable insecure services
 no ip http server
