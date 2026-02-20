@@ -1,0 +1,35 @@
+ VRF Segmentation Configuration
+ ================================
+!
+ip routing
+
+!
+! Define VRFs
+!
+vrf definition VRF-IT
+ rd 100:10
+
+vrf definition VRF-IDMZ
+ rd 100:35
+
+vrf definition VRF-OT
+ rd 100:50
+
+!
+! Example SVI Assignments
+!
+interface Vlan10
+ vrf forwarding VRF-Business
+ ip address 10.10.10.1 255.255.255.0
+
+interface Vlan35
+ vrf forwarding VRF-IDMZ
+ ip address 10.10.35.1 255.255.255.0
+
+interface Vlan50
+ vrf forwarding VRF-Process
+ ip address 10.10.50.1 255.255.255.0
+
+!
+! Inter-VRF Routing Should Be Controlled via Firewall
+!
