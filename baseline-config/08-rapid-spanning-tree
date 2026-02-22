@@ -5,7 +5,7 @@ spanning-tree portfast default
 spanning-tree bpduguard default
 
 ! Optional Root Bridge Configuration (Core Switch Only)
-! spanning-tree vlan 1-4094 priority 4096
+spanning-tree vlan 1-4094 priority 4096
 
 ! Optional Secondary Root (Distribution Layer)
-! spanning-tree vlan 1-4094 priority 8192
+spanning-tree vlan 1-4094 priority 8192
