@@ -6,13 +6,13 @@ ip routing
 !
 ! Define VRFs
 !
-vrf definition VRF-IT
+vrf definition VRF-BUSN
  rd 100:10
 
 vrf definition VRF-IDMZ
  rd 100:35
 
-vrf definition VRF-OT
+vrf definition VRF-PROC
  rd 100:50
 
 !
