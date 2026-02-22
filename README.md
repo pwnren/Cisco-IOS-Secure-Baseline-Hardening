@@ -24,8 +24,7 @@ The baseline reduces management-plane exposure, enforces centralized authenticat
 - TACACS+ centralized AAA (authentication, authorization, accounting)
 - Local fallback authentication
 - AES key encryption for sensitive credentials
-- Exec-timeout and session hardening
-- STIG-aligned legal login banner enforcement
+- Exec timeout and session hardening
 - Configuration archive logging
 
 ---
@@ -43,7 +42,7 @@ The baseline reduces management-plane exposure, enforces centralized authenticat
 
 ## 🌐 Layer 2 Protection Controls
 
-- Rapid-PVST enabled
+- Rapid PVST enabled
 - PortFast default (access ports)
 - BPDU Guard default
 - Root Guard (rogue root prevention)
@@ -59,16 +58,16 @@ The baseline reduces management-plane exposure, enforces centralized authenticat
 - VRF-based separation
 - Layer 3 boundary control strategy
 - ACL enforcement at trust boundaries
-- No direct IT-to-OT routing without explicit policy
+- No direct IT to OT routing without explicit policy
 - Segmentation-aware architecture design
 
 ---
 
 # Design Principles
 
-- Default-deny security mindset
+- Default deny security mindset
 - Encrypted management plane only
-- Least-privilege access control
-- Segmentation-first architecture
-- Defense-in-depth layering
-- Compliance-aligned implementation (CIS)
+- Least privilege access control
+- Segmentation first architecture
+- Defense in depth layering
+- Compliance aligned implementation (CIS)
