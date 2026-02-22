@@ -9,8 +9,14 @@ Layer 2 Protection Controls
 
 spanning-tree mode rapid-pvst
 spanning-tree portfast default
-spanning-tree bpduguard default
-spanning-tree loopguard default
+spanning-tree portfast bpduguard default
+spanning-tree vlan 1-4094 priority 61440
+auto qos srnd4
+errdisable recovery cause udld
+errdisable recovery cause bpduguard 
+errdisable recovery cause  link-flap
+errdisable recovery cause  security-violation
+errdisable recovery interval 300
 
 !
 ! -------------------------------
