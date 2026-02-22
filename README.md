@@ -19,7 +19,7 @@ The baseline reduces management-plane exposure, enforces centralized authenticat
 
 - Disable insecure services (HTTP server, PAD, small TCP/UDP services)
 - CDP control and exposure reduction
-- SSHv2 only (4096-bit RSA key generation)
+- SSHv2 only (4096 bit RSA key generation)
 - Encrypted management transport exclusively
 - TACACS+ centralized AAA (authentication, authorization, accounting)
 - Local fallback authentication
@@ -46,7 +46,7 @@ The baseline reduces management-plane exposure, enforces centralized authenticat
 - PortFast default (access ports)
 - BPDU Guard default
 - Root Guard (rogue root prevention)
-- Loop Guard (non-designated port protection)
+- Loop Guard (non designated port protection)
 - UDLD aggressive (fiber protection)
 - EtherChannel hardening (LACP active mode only)
 - Port security (MAC limiting, sticky MAC, violation control)
@@ -55,11 +55,11 @@ The baseline reduces management-plane exposure, enforces centralized authenticat
 
 ## 🧱 Segmentation & Boundary Enforcement
 
-- VRF-based separation
+- VRF based separation
 - Layer 3 boundary control strategy
 - ACL enforcement at trust boundaries
 - No direct IT to OT routing without explicit policy
-- Segmentation-aware architecture design
+- Segmentation aware architecture design
 
 ---
 
