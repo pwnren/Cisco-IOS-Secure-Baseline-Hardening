@@ -9,7 +9,7 @@
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ---
-This repository provides a reusable security baseline for Cisco IOS network devices aligned with STIG guidance and enterprise network security best practices.
+This repository provides a reusable security baseline for Cisco IOS network devices aligned with some STIG guidance and enterprise network security best practices.
 
 The baseline reduces management-plane exposure, enforces centralized authentication, and implements Layer 2 protection controls.
 
