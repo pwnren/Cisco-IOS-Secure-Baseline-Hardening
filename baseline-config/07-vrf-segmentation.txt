@@ -6,28 +6,28 @@ ip routing
 !
 ! Define VRFs
 !
-vrf definition VRF-BUSN
+vrf definition vrf-busn
  rd 100:10
 
-vrf definition VRF-IDMZ
+vrf definition vrf-idmz
  rd 100:35
 
-vrf definition VRF-PROC
+vrf definition vrf-proc
  rd 100:50
 
 !
 ! Example SVI Assignments
 !
 interface Vlan10
- vrf forwarding VRF-Business
+ vrf forwarding vrf-busn
  ip address 10.10.10.1 255.255.255.0
 
 interface Vlan35
- vrf forwarding VRF-IDMZ
+ vrf forwarding vrf-idmz
  ip address 10.10.35.1 255.255.255.0
 
 interface Vlan50
- vrf forwarding VRF-Process
+ vrf forwarding vrf-proc
  ip address 10.10.50.1 255.255.255.0
 
 !
